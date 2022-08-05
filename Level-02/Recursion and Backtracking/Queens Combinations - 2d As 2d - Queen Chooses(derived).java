@@ -23,8 +23,8 @@ public class Main {
         }
 
         
-        for(int row=i;row<chess.length;row++){
-            for(int col=(row==i)?(j+1):0;col<chess.length;col++){
+        for(int row=lru;row<chess.length;row++){
+            for(int col=(row==lru)?(lcu+1):0;col<chess.length;col++){
                 if(chess[row][col]==false){
                     chess[row][col]=true;
                     queensCombinations(qpsf+1,tq,chess,row,col);
